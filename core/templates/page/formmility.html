@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+ <div class="flex justify-center mt-10 py-16">
+    <form action="." method="post">
+        {% csrf_token %}
+         {{ form.as_p }}
+          
+         <div>
+            <button class="py-3 px-4 rounded-md bg-gray-800 text-white w-80 mt-3" type="submit" >votez vos parti</button>
+         </div>
+    </form>
+ </div>
+{% endblock  %}
+    
